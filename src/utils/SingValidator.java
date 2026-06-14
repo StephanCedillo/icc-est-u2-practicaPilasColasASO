@@ -27,7 +27,7 @@ public class SingValidator {
             }
 
         }
-        return true;
+        return pilaAbierto.isEmpty();
 
       }  
 

@@ -17,9 +17,10 @@ public class QueuePalindrome {
             int tamano = colaORevertida.size();
             colaORevertida.offer(letra);
 
-            for (int j = 0; j < text.length(); j++) {
+            for (int j = 0; j < tamano; j++) {
             char letraMovida = colaORevertida.poll(); 
             colaORevertida.offer(letraMovida); 
+            }
         }
 
         while (!colaOriginal.isEmpty()) {
@@ -31,9 +32,9 @@ public class QueuePalindrome {
             }
             
         }
-            
+            return true;
         }       
-        return true;
+       
         
     }
-}
+
